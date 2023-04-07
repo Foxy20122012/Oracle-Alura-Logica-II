@@ -1,0 +1,1 @@
+Para este ejercicio Se nos plantea Resolver la problematica de calcula el IMC de una manera mas eficiente

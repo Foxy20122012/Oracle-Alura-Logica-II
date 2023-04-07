@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Juego de Adivinanza </title>
+</head>
+<body>
+    <h1>Juego de adivinar un numero</h1>
+    
+    <script>
+
+        const text=(frase)=>{
+            document.write(frase);
+        }
+
+        const mensaje=(alerta)=>{
+            alert(alerta)
+        }
+
+        mensaje(`Bienvenido❤️ a Este Divertido Juego De Advinanza👨‍💻🦊`);
+        mensaje(`INSTRUCCIONES: Debes ingresar un numero tratando de adivinar dicho numero cambiará con cada intento😶‍🌫️.  Provemos tu Suerte🫡`);
+
+        const numUser = parseInt(prompt(`Ingresame un numero entre 0 y 10`));
+
+        const number = Math.round(Math.random()*10);
+        text(number);
+
+        if(number===numUser){
+            mensaje(`Felicidades Adivinaste el numero🥺😇`);
+        }else{
+            mensaje(`Lo sentimos vuelve a intentarlo😕`);
+            
+        }
+
+
+    </script>
+    
+</body>
+</html>

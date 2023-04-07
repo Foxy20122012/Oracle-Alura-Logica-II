@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>IMC Y CONDICINES</title>
+</head>
+<body> 
+    <h2>CURSO DE LOGICA DE PROGRAMACIÓN II DE ORACLE Y ALURA</h2>
+    <script>
+
+        const text=(frase)=>{
+            document.write(frase)
+        }
+
+        var peso= parseInt(prompt("Cual es tu peso"));
+        var altura= parseInt(prompt("Cual es tu altura"));
+
+        const Imc =(peso,altura)=>{
+            return(peso/(altura*altura));
+        }
+
+        
+
+        text("Bienvenido En este ejercicio voy a mejora el IMC para mostrar mensajes segun su peso y si se encuentra saludable o no <br>");
+        document.write( `El valor redondiado Del IMC es:  ${Math.round(Imc(peso,altura))}`) ;
+
+        if ( Imc(peso,altura)<18.5  ){
+
+            document.write("Se encuentra dentro del rango del peso insuficiente.");
+        }else if(Imc(peso,altura) >= 18.5 && Imc(peso,altura) < 25 ){
+            document.write("Sen encuentra en el promedio")
+        }else if(Imc(peso,altura) >= 25 && Imc(peso,altura) < 30){
+            document.write("Se encuentra con sobrepeso");
+        }else{
+            document.write("Se encuentra con obesidad");
+        }
+    </script>
+</body>
+</html>

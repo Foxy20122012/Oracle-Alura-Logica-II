@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTO ONCLICK</title>
+</head>
+<body>
+    <h1>CURSO DE ORACLE Y ALURA</h1>
+    <input/>
+    <button>Verificar si Acepto con el numero😇</button>
+  <script>
+        
+        const numSecreto= 5;
+        const input =document.querySelector("input");
+
+        const Verificar(){
+            if(parseInt(input.value)==numSecreto){
+
+                alert("Usted acerto");
+
+            }else{
+
+                alert("Usted erró");
+
+            }
+        }
+        
+        const button = document.querySelector("button");
+        button.onclick = Verificar;
+    </script>
+</body>
+</html>
